@@ -102,12 +102,10 @@ var myData = [
 ];
 
 
+angular.module('arrayApp').service('svc', function() {
 
+	this.getData = function() {
+		return myData;
+	}
 
-
-
-
-
-
-
-
+})
