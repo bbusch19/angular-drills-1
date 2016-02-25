@@ -1,6 +1,20 @@
 <html ng-app="routerApp">
 	<body>
-		<h1>app6 - routing</h1>
+
+		<ul>
+			<li>
+				<a ui-sref="home">Home</a>
+			</li>
+			<li>
+				<a ui-sref="signup">Sign Up</a>
+			</li>
+			<li>
+				<a ui-sref="details" ng-click="getPokemon()">Details</a>
+			</li>
+		</ul>
+
+
+		<ui-view></ui-view>
 
 
 
@@ -11,5 +25,6 @@
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
+		<script src="homeCtrl.js"></script>
 	</body>
 </html>
